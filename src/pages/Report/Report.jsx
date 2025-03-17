@@ -8,16 +8,14 @@ import EntriesPerPage from "./components/EntriesPerPage";
 
 const Report = () => {
   const [search, setSearch] = useState("");
-  const [tempSearch, setTempSearch] = useState("");
   const [date, setDate] = useState("");
-  const [tempDate, setTempDate] = useState("");
   const [sortColumn, setSortColumn] = useState(null);
 const [sortOrder, setSortOrder] = useState("asc");
 
   const [entriesPerPage, setEntriesPerPage] = useState(5);
   const [currentPage, setCurrentPage] = useState(1);
   const [activeTab, setActiveTab] = useState("Total Tunai");
-  const totalPages = 10;
+
 
   const dataLaporan = [
     { ruas: "Ruas 1", gerbang: "Gerbang 1", gardu: "01", hari: "Kamis", tanggal: "30-05-2024", metode: "Tunai", golI: 567, golII: 234, golIII: 12, golIV: 10, golV: 8, total: 831 },
